@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+
+
+
+
+
+@font-face {
+  font-family: Art;
+  src: url(Font/HenriDidot.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  background-color: black;
+  height: 900vh;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+.Contenitore_Contenuto_Iniziale{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+  
+.Contenitore_Contenuto_Iniziale .Testo{
+  height: 20vh;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+
+}
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+.Testo{ 
+  text-align: center;
+  width: 100%;
+  
+}
+  
+.Contenitore_Contenuto_Iniziale .Testo h1{
+  color: white;
+  font-family: Art;
+  font-weight: 100;
+  font-size: 8vw;
+  letter-spacing: 6px;
+}
+  
+svg{
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+}
+  
+#Frecce{
+  animation: Movimento 1s ease infinite alternate;
+}
+  
+@keyframes Movimento {
+  from{
+    transform: translateY(6px);
+  }
+  to{
+    transform: translateY(18px);
+  }
+}
+
+
+
+
+.Titolo{
+  margin-top: 100px;
+  text-align: center;
+  
+ 
+}
+
+.Titolo h1{
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2vw;
+}
+
+
+.Container_Telescopio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  height: 700px;
+  margin: auto;
+  margin-top: 140px;
+  
+ 
+  
+}
+
+#canvas-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  
+}
+
+canvas{
+  width: 100% !important;
+  height: 100%  !important;
+  object-fit: cover;
+}
+
+
+.Parte_Destra{
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding: 3rem;
+  text-align: center;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  
+}
+
+.Parte_Destra span{
+  font-weight: 600;
+}
+
+
+.Timeline{
+  margin: auto;
+  margin-top: 40px;
+  width: 95%;
+  margin-top: 140px;
+  position: relative;
+ 
+}
+
+.Timeline span{
+  color: white;
+  font-family: Art;
+  letter-spacing: 2px;
+  font-size: 2.7vw;
+}
+
+.checkpoint{
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+  width: 40%;
+  height: 300px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+
+}
+
+.checkpoint h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  color: white;
+  font-family: Art;
+  font-weight: 100;
+}
+
+.checkpoint:nth-child(1){
+  margin-left :0px;
+}
+
+.checkpoint:nth-child(2){
+  margin-right: 0px;
+}
+
+.checkpoint:nth-child(3){
+  margin-left :0px;
+}
+
+.checkpoint:nth-child(4){
+  margin-right: 0px;
+}
+
+.checkpoint:nth-child(5){
+  margin-left: 0px;
+}
+
+.checkpoint:nth-child(6){
+  margin-right: 0px;
+}
+
+.checkpoint:nth-child(7){
+  margin-left: 0px;
+}
+
+
+
+.checkpoint img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Linea{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva {
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  left: 100%; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva1{
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  right: 100%;; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva2 {
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  left: 100%; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva3{
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  right: 100%;; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva4{
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  left: 100%; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva5{
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  right: 100%; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+.LineaAggiuntiva6{
+  position: absolute;
+  top: 50%; /* Posiziona al centro verticalmente rispetto al checkpoint */
+  left: 100%;; /* Posiziona al centro orizzontalmente rispetto al checkpoint */
+  width: 25%; /* Regola la lunghezza della linea aggiuntiva come preferisci */
+  height: 1px;
+  background-color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  
+
+  .Container_Telescopio{
+    margin-top: 0px;
+  }
+
+ 
+
+ 
+
+  .checkpoint{
+    height: 250px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+ 
+
+ .checkpoint{
+  height: 210px;
+}
+
+.Contenitore_Contenuto_Iniziale{
+  height: 90vh;
+}
+
+.Parte_Destra{
+  font-size: 1.5vw;
+  width: 40%;
+ 
+}
+
+canvas{
+  height: 80% !important;
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 850px) {
+ 
+
+  .Container_Telescopio{
+    flex-direction: column-reverse;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: -80px;
+ 
+  }
+
+  
+  .Titolo h1{
+    font-size: 5vw;
+    margin-bottom: 140px;
+  }
+
+  .Parte_Destra{
+    font-size: 2.4vw;
+  }
+
+
+  .Parte_Destra{
+    width: 80%;
+  }
+
+  
+ .Linea{
+  left: 0%;
+ }
+
+ .checkpoint{
+  width: 70%;
+ }
+ .checkpoint:nth-child(1){
+  margin: auto;
+  margin-right: 0px;
+  margin-bottom: 50px;
+ }
+
+ .checkpoint:nth-child(3){
+  margin: auto;
+  margin-right: 0px;
+  margin-bottom: 50px;
+ }
+
+ .checkpoint:nth-child(5){
+  margin: auto;
+  margin-right: 0px;
+  margin-bottom: 50px;
+ }
+
+ .checkpoint:nth-child(7){
+  margin: auto;
+  margin-right: 0px;
+  margin-bottom: 50px;
+ }
+
+ .LineaAggiuntiva{
+  left: -42%;
+  width: 42%;
+ }
+
+ .LineaAggiuntiva1{
+  left: -42%;
+  width: 42%;
+ }
+
+ .LineaAggiuntiva2{
+  left: -42%;
+  width: 42%;
+ }
+
+ .LineaAggiuntiva3{
+  left: -42%;
+  width: 42%;
+ }
+
+ .LineaAggiuntiva4{
+  left: -42%;
+  width: 42%;
+ }
+
+
+ .LineaAggiuntiva5{
+  left: -42%;
+  width: 42%;
+ }
+
+ .LineaAggiuntiva6{
+  left: -42%;
+  width: 42%;
+ }
+  
+ #canvas-container{
+  height: 100%;
+  width: 100%;
+  
+ }
+
+ canvas{
+  width: 100%;
+  height: 80% !important;
+
+ }
+
+}
+
+
+ @media screen and (max-width: 600px) {
+  .Parte_Destra{
+    width: 72%;
+    font-size: 3.2vw;
+  }
+
+  .Titolo h1{
+    font-size: 5vw;
+  }
+
+
+  .Container_Telescopio{
+    margin-bottom: -100px;
+  }
+
+  .checkpoint{
+    height: 150px;
+  }
+
+
+  .Contenitore_Contenuto_Iniziale{
+    height: 55vh;
+  }
+
+} 
