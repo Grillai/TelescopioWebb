@@ -356,9 +356,9 @@ canvas{
 @media screen and (max-width: 850px) {
  
 
-  .Testo h1{
-    font-weight: 500;
-    font-size: 11vw;
+  .Contenitore_Contenuto_Iniziale h1{
+    font-weight: 600;
+    font-size: 13vw;
   }
 
   .Container_Telescopio{
