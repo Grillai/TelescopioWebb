@@ -106,7 +106,7 @@ svg{
   font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 
@@ -356,7 +356,7 @@ canvas{
 @media screen and (max-width: 850px) {
  
 
-  .Contenitore_Contenuto_Iniziale h1{
+  .Contenitore_Contenuto_Iniziale .Testo h1{
     font-weight: 600;
     font-size: 13vw;
   }
@@ -371,9 +371,11 @@ canvas{
 
   
   .Titolo h1{
-    font-size: 5vw;
+    font-size: 8vw;
     margin-bottom: 140px;
   }
+
+
 
   .Parte_Destra{
     font-size: 2.4vw;
